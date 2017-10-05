@@ -5,53 +5,81 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class _01_PetTypeTests {
-
+	
 	@Test
 	public void shouldBeAbleToCreateAVirtualOrganicDog() {
-		VirtualOrganicDog underTest = new VirtualOrganicDog(null, null, 0, 0, 0);
+		VirtualOrganicDog underTest = new VirtualOrganicDog(null, null,0,0);
 		assertNotNull(underTest);
 	}
 	
 	@Test
 	public void shouldBeAbleToExtendVirtualDogToVirtualOrganicDog() {
-		VirtualDog underTest = new VirtualOrganicDog(null, null, 0, 0, 0);
+		VirtualDog underTest = new VirtualOrganicDog(null, null,0,0);
 		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void aVirtualDogShouldKnowItsTypeIsVirtualOrganicDog() {
+		VirtualDog underTest = new VirtualOrganicDog(null, null,0,0);
+		String result = underTest.getPetType();
+		assertEquals("VirtualOrganicDog", result);
 	}
 
 	@Test
 	public void shouldBeAbleToCreateAVirtualRoboticDog() {
-		VirtualRoboticDog underTest = new VirtualRoboticDog(null, null, 0, 0, 0);
+		VirtualRoboticDog underTest = new VirtualRoboticDog(null, null,0,0);
 		assertNotNull(underTest);
 	}
 	
 	@Test
 	public void shouldBeAbleToExtendVirtualDogToVirtualRoboticDog() {
-		VirtualDog underTest = new VirtualRoboticDog(null, null, 0, 0, 0);
+		VirtualDog underTest = new VirtualRoboticDog(null, null,0,0);
 		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void aVirtualDogShouldKnowItsTypeIsVirtualRoboticDog() {
+		VirtualDog underTest = new VirtualRoboticDog(null, null,0,0);
+		String result = underTest.getPetType();
+		assertEquals("VirtualRoboticDog", result);
 	}
 
 	@Test
 	public void shouldBeAbleToCreateAVirtualOrganicCat() {
-		VirtualOrganicCat underTest = new VirtualOrganicCat(null, null, 0, 0, 0);
+		VirtualOrganicCat underTest = new VirtualOrganicCat(null, null,0,0);
 		assertNotNull(underTest);
 	}
 	
 	@Test
 	public void shouldBeAbleToExtendVirtualPetToVirtualOrganicCat() {
-		VirtualCat underTest = new VirtualOrganicCat(null, null, 0, 0, 0);
+		VirtualCat underTest = new VirtualOrganicCat(null, null,0,0);
 		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void aVirtualCatShouldKnowItsTypeIsVirtualOrganicCat() {
+		VirtualCat underTest = new VirtualOrganicCat(null, null,0,0);
+		String result = underTest.getPetType();
+		assertEquals("VirtualOrganicCat", result);
 	}
 
 	@Test
 	public void shouldBeAbleToCreateAVirtualRoboticCat() {
-		VirtualRoboticCat underTest = new VirtualRoboticCat(null, null, 0, 0, 0);
+		VirtualRoboticCat underTest = new VirtualRoboticCat(null, null,0,0);
 		assertNotNull(underTest);
 	}
 	
 	@Test
 	public void shouldBeAbleToExtendVirtualPetToVirtualRoboticCat() {
-		VirtualCat underTest = new VirtualRoboticCat(null, null, 0, 0, 0);
+		VirtualCat underTest = new VirtualRoboticCat(null, null,0,0);
 		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void aVirtualCatShouldKnowItsTypeIsVirtualRoboticCat() {
+		VirtualCat underTest = new VirtualRoboticCat(null, null,0,0);
+		String result = underTest.getPetType();
+		assertEquals("VirtualRoboticCat", result);
 	}
 
 	// @Test

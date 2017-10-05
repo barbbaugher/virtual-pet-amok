@@ -10,14 +10,13 @@ public class VirtualPetShelterApp {
 		VirtualPetShelter petShelter = new VirtualPetShelter();
 
 		// Adding the initial virtual pets available for adoption
-		VirtualPet frankie = new VirtualPet("Frankie", "An Italian Greyhound who likes long walks along the Scioto", 8,
-				5, 7);
+		VirtualPet frankie = new VirtualPet("Frankie", "An Italian Greyhound who likes long walks along the Scioto",10,10);
 		petShelter.addPet(frankie);
-		VirtualPet molly = new VirtualPet("Molly", "A Jug who would love to rip the face off the mailman", 5, 7, 9);
+		VirtualPet molly = new VirtualPet("Molly", "A Jug who would love to rip the face off the mailman",10,10);
 		petShelter.addPet(molly);
-		VirtualPet gracie = new VirtualPet("Gracie", "A sweet Puggle that could stand to lose a few pounds", 3, 10, 8);
+		VirtualPet gracie = new VirtualPet("Gracie", "A sweet Puggle that could stand to lose a few pounds",10,10);
 		petShelter.addPet(gracie);
-		VirtualPet buck = new VirtualPet("Buck", "A fun loving Mutt that just wants to run and play", 6, 3, 10);
+		VirtualPet buck = new VirtualPet("Buck", "A fun loving Mutt that just wants to run and play",10,10);
 		petShelter.addPet(buck);
 
 		// The welcome message
@@ -26,12 +25,12 @@ public class VirtualPetShelterApp {
 		do {
 
 			// Display pet statuses
-			System.out.println("Here is the current status of the pets available for adoption:\n");
-			System.out.println("Name \t|Hunger |Thirst |Boredom");
-			for (VirtualPet availablePets : petShelter.availablePets()) {
-				System.out.println(availablePets.getName() + "\t|" + availablePets.getHungerLevel() + "\t|"
-						+ availablePets.getThirstLevel() + "\t|" + availablePets.getBoredomLevel());
-			}
+//			System.out.println("Here is the current status of the pets available for adoption:\n");
+//			System.out.println("Name \t|Hunger |Thirst |Boredom");
+//			for (VirtualPet availablePets : petShelter.availablePets()) {
+//				System.out.println(availablePets.getName() + "\t|" + availablePets.getHungerLevel() + "\t|"
+//						+ availablePets.getThirstLevel() + "\t|" + availablePets.getBoredomLevel());
+//			}
 
 			// The menu display
 			System.out.println(displayMenu());
@@ -112,7 +111,7 @@ public class VirtualPetShelterApp {
 		String petName = input.next();
 		System.out.println("Enter the description of the pet:");
 		String petDescription = input.next();
-		return new VirtualPet(petName, petDescription);
+		return new VirtualPet(petName, petDescription,10,10);
 	}
 
 }

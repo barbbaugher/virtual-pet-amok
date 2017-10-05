@@ -2,9 +2,8 @@ package pets;
 
 public class VirtualRoboticCat extends VirtualCat {
 
-	public VirtualRoboticCat(String petName, String petDescription, int hungerLevel, int boredomLevel,
-			int thirstLevel) {
-		super(petName, petDescription, hungerLevel, boredomLevel, thirstLevel);
+	public VirtualRoboticCat(String petName, String petDescription, int healthLevel, int happinessLevel) {
+		super(petName, petDescription, healthLevel, happinessLevel);
 	}
 
 }

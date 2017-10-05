@@ -3,11 +3,13 @@ package pets;
 public class VirtualPet {
 
 	// Attributes & initial status
-	String petName;
-	String petDescription;
-	int hungerLevel;
-	int boredomLevel;
-	int thirstLevel;
+	private String petName;
+	private String petDescription;
+	private int hungerLevel;
+	private int boredomLevel;
+	private int thirstLevel;
+	private int healthLevel;
+	private int cleanlinessLevel;
 
 	public VirtualPet(String petName, String petDescription, int hungerLevel, int boredomLevel, int thirstLevel) {
 		this.petName = petName;
@@ -68,6 +70,12 @@ public class VirtualPet {
 		hungerLevel--;
 		boredomLevel -= 2;
 		thirstLevel--;
+		cleanlinessLevel--;
+	}
+
+	public String getPetType() {
+		String className = getClass().getSimpleName();
+		return className;
 	}
 
 }

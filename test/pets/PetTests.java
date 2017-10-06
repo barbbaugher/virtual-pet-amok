@@ -7,32 +7,6 @@ import org.junit.Test;
 public class PetTests {
 
 	@Test
-	public void shouldBeAbleToCreateAnOrganicDog() {
-		OrganicDog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-	
-	@Test
-	public void anOrganicDogShouldBeADog() {
-		Dog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aDogShouldKnowItsTypeIsOrganicDog() {
-		Dog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
-		String result = underTest.getPetType();
-		assertEquals("OrganicDog", result);
-	}
-
-	@Test
-	public void shouldBeAbleToFeedAnOrganicDog() {
-		OrganicDog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
-		String response = underTest.letsEat();
-		assertEquals("Nom, nom, nom", response);
-	}
-
-	@Test
 	public void shouldBeAbleToCreateARoboticDog() {
 		RoboticDog underTest = new RoboticDog(null, null, 0, 0, 0);
 		assertNotNull(underTest);
@@ -51,24 +25,6 @@ public class PetTests {
 		assertEquals("RoboticDog", result);
 	}
 
-	@Test
-	public void shouldBeAbleToCreateAnOrganicCat() {
-		OrganicCat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-	
-	@Test
-	public void anOrganicCatShouldBeACat() {
-		Cat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aCatShouldKnowItsTypeIsOrganicCat() {
-		Cat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
-		String result = underTest.getPetType();
-		assertEquals("OrganicCat", result);
-	}
 
 	@Test
 	public void shouldBeAbleToCreateARoboticCat() {

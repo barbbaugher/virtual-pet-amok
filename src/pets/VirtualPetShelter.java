@@ -44,9 +44,9 @@ public class VirtualPetShelter {
 //	}
 
 	// Water all of the pets in the shelter
-	public void waterTheShelter(int water) {
-		for (VirtualPet availablePets : availablePets()) {
-			availablePets.letsDrink(water);
-		}
+//	public void waterTheShelter(int water) {
+	//	for (VirtualPet availablePets : availablePets()) {
+		//	availablePets.letsDrink(water);
+	//	}
 	}
-}
+

@@ -1,6 +1,6 @@
 package pets;
 
-public class OrganicCat extends Cat {
+public class OrganicCat extends Cat implements Organic {
 	
 	private int hungerLevel;
 	private int thirstLevel;
@@ -18,6 +18,16 @@ public class OrganicCat extends Cat {
 	
 	public int getThirstLevel() {
 		return thirstLevel;
+	}
+
+	//Activities
+	public void letsEat() {
+		hungerLevel += 9;
+		thirstLevel -= 2;
+	}
+
+	public void letsDrink() {
+		thirstLevel +=8;
 	}
 
 }

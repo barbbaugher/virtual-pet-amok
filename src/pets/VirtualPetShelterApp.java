@@ -46,12 +46,12 @@ public class VirtualPetShelterApp {
 			//	System.out.println("Nom, nom, nom...\n");
 			//	break;
 
-			case "2":
-				int water = 5;
-				petShelter.waterTheShelter(water);
-				petShelter.shelterTickMethod();
-				System.out.println("Ahhhhhhhhhhhhhh...\n");
-				break;
+//			case "2":
+	//			int water = 5;
+		//		petShelter.waterTheShelter(water);
+			//	petShelter.shelterTickMethod();
+		//		System.out.println("Ahhhhhhhhhhhhhh...\n");
+			//	break;
 
 			case "3":
 				int fun = 10;

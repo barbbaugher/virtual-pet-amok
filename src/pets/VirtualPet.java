@@ -37,12 +37,6 @@ public class VirtualPet {
 		happinessLevel += fun;
 	}
 
-	void letsDrink(int water) {
-//		thirstLevel += water;
-//		hungerLevel -= 1;
-//		boredomLevel -= 1;
-	}
-
 	// Tick method
 	public void tickMethod() {
 //		hungerLevel--;

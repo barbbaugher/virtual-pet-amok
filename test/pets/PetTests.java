@@ -5,45 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class PetTests {
-
-	@Test
-	public void shouldBeAbleToCreateARoboticDog() {
-		RoboticDog underTest = new RoboticDog(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-	
-	@Test
-	public void aRoboticDogShouldBeADog() {
-		Dog underTest = new RoboticDog(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aDogShouldKnowItsTypeIsRoboticDog() {
-		Dog underTest = new RoboticDog(null, null, 0, 0, 0);
-		String result = underTest.getPetType();
-		assertEquals("RoboticDog", result);
-	}
-
-
-	@Test
-	public void shouldBeAbleToCreateARoboticCat() {
-		RoboticCat underTest = new RoboticCat(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-	
-	@Test
-	public void aRoboticCatShouldBeACat() {
-		Cat underTest = new RoboticCat(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aCatShouldKnowItsTypeIsRoboticCat() {
-		Cat underTest = new RoboticCat(null, null, 0, 0, 0);
-		String result = underTest.getPetType();
-		assertEquals("RoboticCat", result);
-	}
 	
 	@Test
 	public void shouldBeAbleToCreateADog() {

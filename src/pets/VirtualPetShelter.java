@@ -37,11 +37,11 @@ public class VirtualPetShelter {
 	}
 
 	// Feed all of the pets in the shelter
-	public void feedTheShelter(int food) {
-		for (VirtualPet availablePets : availablePets()) {
-			availablePets.letsEat(food);
-		}
-	}
+//	public void feedTheShelter(int food) {
+	//	for (VirtualPet availablePets : availablePets()) {
+//			availablePets.letsEat(food);
+	//	}
+//	}
 
 	// Water all of the pets in the shelter
 	public void waterTheShelter(int water) {

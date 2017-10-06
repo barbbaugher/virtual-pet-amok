@@ -33,11 +33,6 @@ public class VirtualPet {
 	}
 
 	// Activities
-	void letsEat(int food) {
-//		hungerLevel += food;
-//		thirstLevel -= 1;
-	}
-
 	void letsPlay(int fun) {
 		happinessLevel += fun;
 	}

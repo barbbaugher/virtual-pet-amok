@@ -1,12 +1,12 @@
 package pets;
 
-public class VirtualOrganicDog extends VirtualDog {
+public class OrganicDog extends Dog {
 
 	private int hungerLevel;
 	private int thirstLevel;
 	private int cleanlinessLevel;
 	
-	public VirtualOrganicDog(String petName, String petDescription, int healthLevel, int happinessLevel, int hungerLevel, int thirstLevel, int cleanlinessLevel) {
+	public OrganicDog(String petName, String petDescription, int healthLevel, int happinessLevel, int hungerLevel, int thirstLevel, int cleanlinessLevel) {
 		super(petName, petDescription, healthLevel, happinessLevel);
 		this.hungerLevel = hungerLevel;
 		this.thirstLevel = thirstLevel;

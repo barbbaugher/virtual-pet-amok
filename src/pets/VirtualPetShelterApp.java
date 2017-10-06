@@ -39,12 +39,12 @@ public class VirtualPetShelterApp {
 
 			switch (menuEntry) {
 
-			case "1":
-				int food = 6;
-				petShelter.feedTheShelter(food);
-				petShelter.shelterTickMethod();
-				System.out.println("Nom, nom, nom...\n");
-				break;
+//			case "1":
+	//			int food = 6;
+		//		petShelter.feedTheShelter(food);
+			//	petShelter.shelterTickMethod();
+			//	System.out.println("Nom, nom, nom...\n");
+			//	break;
 
 			case "2":
 				int water = 5;

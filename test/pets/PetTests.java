@@ -7,124 +7,124 @@ import org.junit.Test;
 public class PetTests {
 
 	@Test
-	public void shouldBeAbleToCreateAVirtualOrganicDog() {
-		VirtualOrganicDog underTest = new VirtualOrganicDog(null, null, 0, 0, 0, 0, 0);
+	public void shouldBeAbleToCreateAnOrganicDog() {
+		OrganicDog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
+		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void anOrganicDogShouldBeADog() {
+		Dog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 
 	@Test
-	public void shouldBeAbleToExtendVirtualDogToVirtualOrganicDog() {
-		VirtualDog underTest = new VirtualOrganicDog(null, null, 0, 0, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aVirtualDogShouldKnowItsTypeIsVirtualOrganicDog() {
-		VirtualDog underTest = new VirtualOrganicDog(null, null, 0, 0, 0, 0, 0);
+	public void aDogShouldKnowItsTypeIsOrganicDog() {
+		Dog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
 		String result = underTest.getPetType();
-		assertEquals("VirtualOrganicDog", result);
+		assertEquals("OrganicDog", result);
 	}
 
 	@Test
-	public void shouldBeAbleToFeedAVirtualOrganicDog() {
-		VirtualOrganicDog underTest = new VirtualOrganicDog(null, null, 0, 0, 0, 0, 0);
+	public void shouldBeAbleToFeedAnOrganicDog() {
+		OrganicDog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
 		String response = underTest.letsEat();
 		assertEquals("Nom, nom, nom", response);
 	}
 
 	@Test
-	public void shouldBeAbleToCreateAVirtualRoboticDog() {
-		VirtualRoboticDog underTest = new VirtualRoboticDog(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void shouldBeAbleToExtendVirtualDogToVirtualRoboticDog() {
-		VirtualDog underTest = new VirtualRoboticDog(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aVirtualDogShouldKnowItsTypeIsVirtualRoboticDog() {
-		VirtualDog underTest = new VirtualRoboticDog(null, null, 0, 0, 0);
-		String result = underTest.getPetType();
-		assertEquals("VirtualRoboticDog", result);
-	}
-
-	@Test
-	public void shouldBeAbleToCreateAVirtualOrganicCat() {
-		VirtualOrganicCat underTest = new VirtualOrganicCat(null, null, 0, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void shouldBeAbleToExtendVirtualPetToVirtualOrganicCat() {
-		VirtualCat underTest = new VirtualOrganicCat(null, null, 0, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aVirtualCatShouldKnowItsTypeIsVirtualOrganicCat() {
-		VirtualCat underTest = new VirtualOrganicCat(null, null, 0, 0, 0, 0);
-		String result = underTest.getPetType();
-		assertEquals("VirtualOrganicCat", result);
-	}
-
-	@Test
-	public void shouldBeAbleToCreateAVirtualRoboticCat() {
-		VirtualRoboticCat underTest = new VirtualRoboticCat(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void shouldBeAbleToExtendVirtualPetToVirtualRoboticCat() {
-		VirtualCat underTest = new VirtualRoboticCat(null, null, 0, 0, 0);
-		assertNotNull(underTest);
-	}
-
-	@Test
-	public void aVirtualCatShouldKnowItsTypeIsVirtualRoboticCat() {
-		VirtualCat underTest = new VirtualRoboticCat(null, null, 0, 0, 0);
-		String result = underTest.getPetType();
-		assertEquals("VirtualRoboticCat", result);
-	}
-	
-	@Test
-	public void shouldBeAbleToCreateAVirtualDog() {
-		VirtualDog underTest = new VirtualDog(null, null,0,0);
+	public void shouldBeAbleToCreateARoboticDog() {
+		RoboticDog underTest = new RoboticDog(null, null, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 	
 	@Test
-	public void shouldBeAbleToCreateAVirtualCat() {
-		VirtualCat underTest = new VirtualCat(null, null,0,0);
+	public void aRoboticDogShouldBeADog() {
+		Dog underTest = new RoboticDog(null, null, 0, 0, 0);
+		assertNotNull(underTest);
+	}
+
+	@Test
+	public void aDogShouldKnowItsTypeIsRoboticDog() {
+		Dog underTest = new RoboticDog(null, null, 0, 0, 0);
+		String result = underTest.getPetType();
+		assertEquals("RoboticDog", result);
+	}
+
+	@Test
+	public void shouldBeAbleToCreateAnOrganicCat() {
+		OrganicCat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 	
 	@Test
-	public void aVirtualDogShouldBeAVirtualPet() {
-		VirtualPet underTest = new VirtualDog(null, null,0,0);
+	public void anOrganicCatShouldBeACat() {
+		Cat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 
 	@Test
-	public void aVirtualPetShouldKnowItsTypeIsVirtualDog() {
-		VirtualPet underTest = new VirtualDog(null, null,0,0);
+	public void aCatShouldKnowItsTypeIsOrganicCat() {
+		Cat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		String result = underTest.getPetType();
-		assertEquals("VirtualDog", result);
+		assertEquals("OrganicCat", result);
 	}
 
 	@Test
-	public void aVirtualCatShouldBeAVirtualPet() {
-		VirtualPet underTest = new VirtualCat(null, null,0,0);
+	public void shouldBeAbleToCreateARoboticCat() {
+		RoboticCat underTest = new RoboticCat(null, null, 0, 0, 0);
+		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void aRoboticCatShouldBeACat() {
+		Cat underTest = new RoboticCat(null, null, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 
 	@Test
-	public void aVirtualPetShouldKnowItsTypeIsVirtualCat() {
-		VirtualPet underTest = new VirtualCat(null, null,0,0);
+	public void aCatShouldKnowItsTypeIsRoboticCat() {
+		Cat underTest = new RoboticCat(null, null, 0, 0, 0);
 		String result = underTest.getPetType();
-		assertEquals("VirtualCat", result);
+		assertEquals("RoboticCat", result);
+	}
+	
+	@Test
+	public void shouldBeAbleToCreateADog() {
+		Dog underTest = new Dog(null, null,0,0);
+		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void aDogShouldBeAVirtualPet() {
+		VirtualPet underTest = new Dog(null, null,0,0);
+		assertNotNull(underTest);
+	}
+	
+	@Test
+	public void aVirtualPetShouldKnowItsTypeIsADog() {
+		VirtualPet underTest = new Dog(null, null,0,0);
+		String result = underTest.getPetType();
+		assertEquals("Dog", result);
+	}
+	
+	@Test
+	public void shouldBeAbleToCreateACat() {
+		Cat underTest = new Cat(null, null,0,0);
+		assertNotNull(underTest);
+	}
+
+	@Test
+	public void aCatShouldBeAVirtualPet() {
+		VirtualPet underTest = new Cat(null, null,0,0);
+		assertNotNull(underTest);
+	}
+
+	@Test
+	public void aVirtualPetShouldKnowItsTypeIsACat() {
+		VirtualPet underTest = new Cat(null, null,0,0);
+		String result = underTest.getPetType();
+		assertEquals("Cat", result);
 	}
 
 	//

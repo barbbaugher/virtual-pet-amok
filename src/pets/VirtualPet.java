@@ -24,17 +24,13 @@ public class VirtualPet {
 		return petDescription;
 	}
 
-//	public int getHungerLevel() {
-//		return hungerLevel;
-//	}
+	public int getHealthLevel() {
+		return healthLevel;
+	}
 
-//	public int getBoredomLevel() {
-//		return boredomLevel;
-//	}
-
-//	public int getThirstLevel() {
-//		return thirstLevel;
-//	}
+	public int getHappinessLevel() {
+		return happinessLevel;
+	}
 
 	// Activities
 	void letsEat(int food) {
@@ -43,8 +39,7 @@ public class VirtualPet {
 	}
 
 	void letsPlay(int fun) {
-//		boredomLevel += fun;
-//		thirstLevel -= 2;
+		happinessLevel += fun;
 	}
 
 	void letsDrink(int water) {

@@ -5,43 +5,48 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class PetTests {
-	
+
 	@Test
 	public void shouldBeAbleToCreateADog() {
-		Dog underTest = new Dog(null, null,0,0);
+		Dog underTest = new Dog(null, null, 0, 0);
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void aDogShouldBeAVirtualPet() {
-		VirtualPet underTest = new Dog(null, null,0,0);
+		VirtualPet underTest = new Dog(null, null, 0, 0);
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void aVirtualPetShouldKnowItsTypeIsADog() {
-		VirtualPet underTest = new Dog(null, null,0,0);
+		VirtualPet underTest = new Dog(null, null, 0, 0);
 		String result = underTest.getPetType();
 		assertEquals("Dog", result);
 	}
-	
+
 	@Test
 	public void shouldBeAbleToCreateACat() {
-		Cat underTest = new Cat(null, null,0,0);
+		Cat underTest = new Cat(null, null, 0, 0);
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void aCatShouldBeAVirtualPet() {
-		VirtualPet underTest = new Cat(null, null,0,0);
+		VirtualPet underTest = new Cat(null, null, 0, 0);
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void aVirtualPetShouldKnowItsTypeIsACat() {
-		VirtualPet underTest = new Cat(null, null,0,0);
+		VirtualPet underTest = new Cat(null, null, 0, 0);
 		String result = underTest.getPetType();
 		assertEquals("Cat", result);
+	}
+
+	@Test(expected = InstantiationException.class)
+	public void shouldNotBeAbleToConstructADog() throws Exception {
+		Dog.class.newInstance();
 	}
 
 	//

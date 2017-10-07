@@ -19,6 +19,7 @@ public class RoboticCatTests {
 		assertNotNull(underTest);
 	}
 
+	
 	@Test
 	public void aCatShouldKnowItsTypeIsRoboticCat() {
 		Cat underTest = new RoboticCat(null, null, 0, 0, 0);
@@ -26,5 +27,16 @@ public class RoboticCatTests {
 		assertEquals("RoboticCat", result);
 	}
 
+	@Test
+	public void aRoboticCatShouldBeRobotic() {
+		Robotic underTest = new RoboticCat(null, null, 0, 0, 0);
+		assertNotNull(underTest);
+	}
 	
+	@Test
+	public void shouldBeAbleToOilARoboticCat() {
+		Robotic underTest = new RoboticCat(null, null, 0, 0, 0);
+		underTest.letsOilTheRobots();
+		assertNotNull(underTest);
+	}
 }

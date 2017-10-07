@@ -26,6 +26,17 @@ public class RoboticDogTests {
 		assertEquals("RoboticDog", result);
 	}
 
+	@Test
+	public void aRoboticDogShouldBeRobotic() {
+		Robotic underTest = new RoboticDog(null, null, 0, 0, 0);
+		assertNotNull(underTest);
+	}
 
-
+	@Test
+	public void shouldBeAbleToOilARoboticDog() {
+		Robotic underTest = new RoboticDog(null, null, 0, 0, 0);
+		underTest.letsOilTheRobots();
+		assertNotNull(underTest);
+	}
+	
 }

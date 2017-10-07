@@ -1,6 +1,6 @@
 package pets;
 
-public class RoboticCat extends Cat {
+public class RoboticCat extends Cat implements Robotic {
 	
 	private int maintenanceLevel;
 
@@ -12,6 +12,12 @@ public class RoboticCat extends Cat {
 	// Get methods
 	public int getMaintenanceLevel() {
 		return maintenanceLevel;
+	}
+
+	@Override
+	public void letsOilTheRobots() {
+		maintenanceLevel += 8;
+		
 	}
 	
 }

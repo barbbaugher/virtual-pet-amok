@@ -35,7 +35,6 @@ public class OrganicDog extends Dog implements Organic {
 
 	public void letsDrink() {
 		thirstLevel += 8;
-		hungerLevel += 1;
 	}
 
 	public void letsCleanTheDogCages() {

@@ -126,7 +126,7 @@ public class VirtualPetShelterApp {
 			case "7":
 				petShelter.walkTheDogsInTheShelter();
 				petShelter.shelterTickMethod();
-				System.out.println("These paws were made for walking...");
+				System.out.println("These paws were made for walking...\n");
 				break;
 
 			case "8":
@@ -157,7 +157,7 @@ public class VirtualPetShelterApp {
 				break;
 
 			// Exit menu
-			case "16":
+			case "13":
 				System.out.println("Thanks for playing.");
 				System.exit(0);
 				break;
@@ -181,7 +181,7 @@ public class VirtualPetShelterApp {
 
 	// Menu display
 	private static String displayMenu() {
-		return "\nPlease select an option below by entering the corresponding number:\n\n1.  Let's Eat - feed all the organic pets\n2.  Let's Drink - water all the organic pets\n3.  Let's Play - select a pet to play with\n4.  Let's Maintain The Robots - oil all the robotic pets\n5.  Admit an organic dog to the shelter\n6.  Admit an organic cat to the shelter\n7.  Admit a robotic dog to the shelter\n8.  Admit a robotic cat to the shelter\n5.  Adopt a pet from the shelter\n6.  Exit the program";
+		return "\nPlease select an option below by entering the corresponding number:\n\n1.  Let's Eat - feed all the organic pets\n2.  Let's Drink - water all the organic pets\n3.  Let's Play - select a pet to play with\n4.  Let's Maintain the Robots - oil all the robotic pets\n5.  Let's Clean the Dog Cages - clean all the organic dog cages\n6.  Let's Clean the Shelter Litter Box - clean the shared shelter litter box\n7.  Let's Walk the Dogs - walk all the dogs in the shelter\n8.  Admit an organic dog to the shelter\n9.  Admit an organic cat to the shelter\n10.  Admit a robotic dog to the shelter\n11.  Admit a robotic cat to the shelter\n12.  Adopt a pet from the shelter\n13.  Exit the program";
 	}
 
 	// Admit an organic dog

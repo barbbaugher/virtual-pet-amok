@@ -41,7 +41,7 @@ Attributes For Robotic Pets (instance variables)
 
 Attributes For the Shelter (instance variable)
 	
-	ShelterLitterBox
+	ShelterLitterBoxCleanliness
 
 These are the statuses of the inital pets in the shelter whene the game begins:
 
@@ -78,14 +78,18 @@ The game ends when all of the available pets have been adopted.
 
 Activities (methods)
 
-1.  Let's Eat - feed all the pets
+1.  Let's Eat - feed all the organic pets
 
-		hungerLevel + 6
+		hungerLevel + 10 (dogs)
 
-		thirstLevel - 1
+		thirstLevel - 1 (dogs)
+
+		hungerLevel + 9 (cats)
+
+		thirstLevel - 2 (cats)
 
 
-2.  Let's Drink - water all the pets
+2.  Let's Drink - water all the organic pets
 
 		thirstLevel + 5
 
@@ -96,33 +100,84 @@ Activities (methods)
 
 3.  Let's Play - select a pet to play with
 
-		boredomLevel + 10
+		happinessLevel + 10
 
-		thirstLevel - 2
+4.  Let's Maintain the Robots - oil all the robotic pets
 
-4.  Admit a pet to the shelter
+		maintenanceLevel + 10 (dogs)
 
-		Enter a new virtual pet by providing their name and description
+		maintenanceLevel + 8 (cats)
 
-		The tick method runs
+5.  Let's Clean the Dog Cages - clean all the organic dog cages
 
-5.  Adopt a pet from the shelter
+		cleanlinessLevel + 9
+
+6.  Let's Clean the Shelter Litter Box - clean the shared litter box
+
+		shelterLitterBoxCleanliness + 7
+
+7.  Let's Walk the Dogs - walk all the dogs in the shelter
+
+		happinessLevel + 7
+
+		cleanlinessLevel +3 (organic dogs)		
+
+8.  Admit an organic dog to the shelter
+
+	Enter a new organic dog by providing their name and description
+
+9.  Admit an organic cat to the shelter
+	
+	Enter a new organic cat by providing their name and description
+
+10.  Admit a robotic dog to the shelter
+
+	Enter a new robotic dog by providing their name and description
+
+11.  Admit a robotic cat to the shelter
+
+		Enter a new robotic cat by providing their name and description
+
+12.  Adopt a pet from the shelter
 
 		Adopt a pet from the shelter by removing them from the collection
 
-		The tick method runs
 
-6.  Exit the program.
+13.  Exit the program.
 
 Tick Method
 
-After each turn - all the virtual pets in the shelter have their levels adjusted by the following amounts:
+After each turn - all the organic dogs in the shelter have their levels adjusted by the following amounts:
 
 	hungerLevel - 1
 
-	boredomLevel - 2
+	thirstLevel - 1
+
+	cleanlinessLevel - 1
+
+	happinessLevel - 2
+
+After each turn - all of the organic cats in the shelter have their levels adjusted by the following amounts:
+
+	hungerLevel - 1
 
 	thirstLevel - 1
+
+	happinessLevel - 2
+
+After each turn - all of the robotic dogs in the shelter have their levels adjusted by the following amounts:
+
+	maintenanceLevel - 1
+
+	happinessLevel - 1
+
+After each turn - all of the robotic cats in the shelter have their levels adjusted by the following amounts:
+
+	maintenanceLevel - 1
+
+	happinessLevel - 2
+
+After each turn the shelterLitterBoxCleanliness is decreased by 1
 
 
 

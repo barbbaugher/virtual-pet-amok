@@ -43,7 +43,7 @@ public abstract class VirtualPet {
 
 	// Activities
 	void letsPlay() {
-		setHappinessLevel(getHappinessLevel() + 9);
+		setHappinessLevel(getHappinessLevel() + 10);
 	}
 
 	// Tick method

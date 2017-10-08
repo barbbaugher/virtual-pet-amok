@@ -15,14 +15,14 @@ public class RoboticCatTests {
 	
 	@Test
 	public void aRoboticCatShouldBeACat() {
-		Cat underTest = new RoboticCat(null, null, 0, 0, 0);
+		VirtualPet underTest = new RoboticCat(null, null, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 
 	
 	@Test
 	public void aCatShouldKnowItsTypeIsRoboticCat() {
-		Cat underTest = new RoboticCat(null, null, 0, 0, 0);
+		VirtualPet underTest = new RoboticCat(null, null, 0, 0, 0);
 		String result = underTest.getPetType();
 		assertEquals("RoboticCat", result);
 	}

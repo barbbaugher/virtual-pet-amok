@@ -1,14 +1,21 @@
 package pets;
 
-public class VirtualPet {
+public abstract class VirtualPet {
 
 	// Attributes & initial status
 	private String petName;
 	private String petDescription;
 	private int healthLevel;
 	private int happinessLevel;
-
+	
 	public VirtualPet(String petName, String petDescription, int healthLevel, int happinessLevel) {
+		this.petName = petName;
+		this.petDescription = petDescription;
+		this.healthLevel = healthLevel;
+		this.happinessLevel = happinessLevel;
+	}
+	
+	public VirtualPet(String petName, String petDescription) {
 		this.petName = petName;
 		this.petDescription = petDescription;
 		healthLevel = 10;

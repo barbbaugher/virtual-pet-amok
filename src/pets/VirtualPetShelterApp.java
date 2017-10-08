@@ -10,13 +10,13 @@ public class VirtualPetShelterApp {
 		VirtualPetShelter petShelter = new VirtualPetShelter();
 
 		// Adding the initial virtual pets available for adoption
-		VirtualPet frankie = new VirtualPet("Frankie", "An Italian Greyhound who likes long walks along the Scioto",10,10);
+		OrganicDog frankie = new OrganicDog("Frankie", "An Italian Greyhound who likes long walks along the Scioto",10,10, 0, 0, 0);
 		petShelter.addPet(frankie);
-		VirtualPet molly = new VirtualPet("Molly", "A Jug who would love to rip the face off the mailman",10,10);
+		RoboticDog molly = new RoboticDog("Molly", "A Jug who would love to rip the face off the mailman",10,10, 0);
 		petShelter.addPet(molly);
-		VirtualPet gracie = new VirtualPet("Gracie", "A sweet Puggle that could stand to lose a few pounds",10,10);
+		VirtualPet gracie = new OrganicCat("Gracie", "A sweet Puggle that could stand to lose a few pounds",10,10, 0, 0);
 		petShelter.addPet(gracie);
-		VirtualPet buck = new VirtualPet("Buck", "A fun loving Mutt that just wants to run and play",10,10);
+		VirtualPet buck = new OrganicDog("Buck", "A fun loving Mutt that just wants to run and play",10,10, 0, 0, 0);
 		petShelter.addPet(buck);
 
 		// The welcome message
@@ -65,10 +65,10 @@ public class VirtualPetShelterApp {
 				System.out.println(petName + " loved play time\n");
 				break;
 
-			case "4":
-				petShelter.addPet(promptUserForNewPet(input));
-				petShelter.shelterTickMethod();
-				break;
+	//		case "4":
+		//		petShelter.addPet(promptUserForNewPet(input));
+			//	petShelter.shelterTickMethod();
+		//		break;
 
 			case "5":
 				System.out.println("Enter the pet's name you would like to adopt: ");
@@ -106,12 +106,12 @@ public class VirtualPetShelterApp {
 	}
 
 	// Admit a pet
-	private static VirtualPet promptUserForNewPet(Scanner input) {
-		System.out.println("Enter the name of the pet you would like to add:");
-		String petName = input.next();
-		System.out.println("Enter the description of the pet:");
-		String petDescription = input.next();
-		return new VirtualPet(petName, petDescription,10,10);
-	}
+//	private static VirtualPet promptUserForNewPet(Scanner input) {
+	//	System.out.println("Enter the name of the pet you would like to add:");
+	//	String petName = input.next();
+	//	System.out.println("Enter the description of the pet:");
+	//	String petDescription = input.next();
+	//	return new VirtualPet(petName, petDescription,10,10);
+//	}
 
 }

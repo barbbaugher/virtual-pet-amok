@@ -14,14 +14,14 @@ public class OrganicCatTests {
 	}
 	
 	@Test
-	public void anOrganicCatShouldBeACat() {
-		Cat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
+	public void anOrganicCatShouldBeAVirtualPet() {
+		VirtualPet underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void aCatShouldKnowItsTypeIsOrganicCat() {
-		Cat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
+		VirtualPet underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		String result = underTest.getPetType();
 		assertEquals("OrganicCat", result);
 	}

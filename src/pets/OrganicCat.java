@@ -1,6 +1,6 @@
 package pets;
 
-public class OrganicCat extends Cat implements Organic {
+public class OrganicCat extends VirtualPet implements Organic {
 	
 	private int hungerLevel;
 	private int thirstLevel;

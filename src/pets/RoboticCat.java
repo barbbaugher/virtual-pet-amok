@@ -1,6 +1,6 @@
 package pets;
 
-public class RoboticCat extends Cat implements Robotic {
+public class RoboticCat extends VirtualPet implements Robotic {
 	
 	private int maintenanceLevel;
 

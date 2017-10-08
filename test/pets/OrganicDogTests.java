@@ -45,7 +45,7 @@ public class OrganicDogTests {
 		underTest.letsDrink();
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void shouldBeAbleToCleanAnOrganicDogsCage() {
 		OrganicDog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);

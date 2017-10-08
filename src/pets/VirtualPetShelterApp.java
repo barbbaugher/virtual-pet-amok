@@ -12,17 +12,17 @@ public class VirtualPetShelterApp {
 
 		// Adding the initial virtual pets available for adoption
 		OrganicDog frankie = new OrganicDog("Frankie", "An Italian Greyhound who likes long walks along the Scioto", 10,
-				10, 0, 0, 0);
+				5, 8, 7, 6);
 		petShelter.addPet(frankie);
 		RoboticDog molly = new RoboticDog("Molly", "A robotic dog who would love to rip the face off the mailman", 10,
-				10, 0);
+				10, 7);
 		petShelter.addPet(molly);
 		VirtualPet gracie = new OrganicCat("Gracie", "A sweet tabby cat that could stand to lose a few pounds", 10, 10,
-				0, 0);
+				3, 8);
 		petShelter.addPet(gracie);
-		VirtualPet buck = new OrganicDog("Buck", "A fun loving Mutt that just wants to run and play", 10, 10, 0, 0, 0);
+		VirtualPet buck = new OrganicDog("Buck", "A fun loving Mutt that just wants to run and play", 10, 10, 6, 10, 9);
 		petShelter.addPet(buck);
-		RoboticCat kitty = new RoboticCat("Kitty", "A robotic cat who doesn't like you", 10, 10, 0);
+		RoboticCat kitty = new RoboticCat("Kitty", "A robotic cat who doesn't like you", 10, 4, 9);
 		petShelter.addPet(kitty);
 
 		// The welcome message
@@ -50,7 +50,8 @@ public class VirtualPetShelterApp {
 					System.out.println(availablePets.getName() + "\t|" + availablePets.getHealthLevel() + "\t|"
 							+ availablePets.getHappinessLevel() + "\t   |"
 							+ ((OrganicCat) availablePets).getHungerLevel() + "\t   |"
-							+ ((OrganicCat) availablePets).getThirstLevel() + "\t   |" + petShelter.getShelterLitterBoxCleanliness());
+							+ ((OrganicCat) availablePets).getThirstLevel() + "\t   |"
+							+ petShelter.getShelterLitterBoxCleanliness());
 				}
 			}
 
@@ -109,13 +110,13 @@ public class VirtualPetShelterApp {
 				petShelter.shelterTickMethod();
 				System.out.println("If I am well oiled I shall soon be all right again\n");
 				break;
-				
+
 			case "5":
 				petShelter.cleanTheDogCagesInTheShelter();
 				petShelter.shelterTickMethod();
 				System.out.println("Squeaky clean\n");
 				break;
-				
+
 			case "6":
 				petShelter.cleanTheLitterBox();
 				petShelter.shelterTickMethod();
@@ -123,26 +124,30 @@ public class VirtualPetShelterApp {
 				break;
 
 			case "7":
+				petShelter.walkTheDogsInTheShelter();
+				petShelter.shelterTickMethod();
+				System.out.println("These paws were made for walking...");
+				break;
+				
+			case "8":
 				petShelter.addPet(promptUserForNewOrganicDog(input));
 				petShelter.shelterTickMethod();
 				break;
 
-			case "8":
+			case "9":
 				petShelter.addPet(promptUserForNewOrganicCat(input));
 				petShelter.shelterTickMethod();
 				break;
 
-			case "9":
+			case "10":
 				petShelter.addPet(promptUserForNewRoboticDog(input));
 				petShelter.shelterTickMethod();
 				break;
 
-			case "10":
+			case "11":
 				petShelter.addPet(promptUserForNewRoboticCat(input));
 				petShelter.shelterTickMethod();
 				break;
-
-
 
 			// case "5":
 			// System.out.println("Enter the pet's name you would like to adopt: ");

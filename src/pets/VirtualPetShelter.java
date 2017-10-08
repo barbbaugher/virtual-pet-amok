@@ -37,6 +37,7 @@ public class VirtualPetShelter {
 		for (VirtualPet availablePets : availablePets()) {
 			availablePets.tickMethod();
 		}
+		shelterLitterBoxCleanliness--;
 	}
 
 	// Feed all of the organic pets in the shelter
@@ -80,6 +81,19 @@ public class VirtualPetShelter {
 		}
 
 	}
+	
+	// Walk the dogs in the shelter
+	public void walkTheDogsInTheShelter() {
+		for (VirtualPet availablePets : availablePets()) {
+			if (availablePets instanceof Dog) {
+				Dog dog = (Dog) availablePets;
+				dog.letsWalkTheDogs();
+			}
+		}
+
+	}
+
+	
 
 	// Clean the shelter litter box
 	public void cleanTheLitterBox() {

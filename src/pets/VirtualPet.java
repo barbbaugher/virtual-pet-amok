@@ -7,19 +7,12 @@ public abstract class VirtualPet {
 	private String petDescription;
 	private int healthLevel;
 	private int happinessLevel;
-	
+
 	public VirtualPet(String petName, String petDescription, int healthLevel, int happinessLevel) {
 		this.petName = petName;
 		this.petDescription = petDescription;
 		this.healthLevel = healthLevel;
 		this.happinessLevel = happinessLevel;
-	}
-	
-	public VirtualPet(String petName, String petDescription) {
-		this.petName = petName;
-		this.petDescription = petDescription;
-		healthLevel = 10;
-		happinessLevel = 10;
 	}
 
 	// Get methods
@@ -39,20 +32,25 @@ public abstract class VirtualPet {
 		return happinessLevel;
 	}
 
+	// Set methods
+	public void setHappinessLevel(int happinessLevel) {
+		this.happinessLevel = happinessLevel;
+	}
+
+	public void setHealthLevel(int healthLevel) {
+		this.healthLevel = healthLevel;
+	}
+
 	// Activities
 	void letsPlay() {
-		happinessLevel += 9;
+		setHappinessLevel(getHappinessLevel() + 9);
 	}
 
 	// Tick method
 	public void tickMethod() {
-//		hungerLevel--;
-//		boredomLevel -= 2;
-//		thirstLevel--;
-//		cleanlinessLevel--;
-		happinessLevel --;
 	}
 
+	// Class name
 	public String getPetType() {
 		String className = getClass().getSimpleName();
 		return className;

@@ -1,38 +1,75 @@
 Welcome to the Home for Homeless Virtual Pets
 
-*Unless you are a virtual cat... no virtual cats allowed.
+*Now accepting cats because we have to.
 
 To start the game the following pets are available for adoption in the shelter:
 
 	Buck	|A fun loving Mutt that just wants to run and play
 
-	Gracie	|A sweet Puggle that could stand to lose a few pounds
+	Gracie	|A sweet tabby cat that could stand to lose a few pounds
 
-	Molly	|A Jug who would love to rip the face off the mailman
+	Molly	|A robotic dog who would love to rip the face off the mailman
 
 	Frankie	|An Italian Greyhound who likes long walks along the Scioto
 
+	Kitty	|A robotic cat who doesn't like you
 
-Attributes (instance variables)
+
+Attributes For All Pets (instance variables)
+
+	HealthLevel
+
+	HappinessLevel
+
+Attributes For Organic Dogs (instance variables)
 
 	HungerLevel
 
-	BoredomLevel
+	ThirstLevel
+
+	Cleanliness
+
+Attributes For Organic Cats (instance variables)
+
+	HungerLevel
 
 	ThirstLevel
+
+Attributes For Robotic Pets (instance variables)
+
+	MaintenanceLevel
+
+Attributes For the Shelter (instance variable)
+	
+	ShelterLitterBox
 
 These are the statuses of the inital pets in the shelter whene the game begins:
 
 
-	Name 	|Hunger 	|Thirst 	|Boredom
+	Organic Dogs:
 
-	Buck	|6		|10		|3
+	Name 	|Health 	|Happiness 	|Hunger 	|Thirst 	|Cleanliness
 
-	Gracie	|3		|8		|10
+	Buck	|10			|10			|6			|10			|9
 
-	Molly	|5		|9		|7
+	Frankie |10			|5			|8			|7			|6
 
-	Frankie	|8		|7		|5
+
+	Organic Cats:
+
+	Name 	|Health 	|Happiness 	|Hunger 	|Thirst 	|ShelterLitterBox
+
+	Gracie	|10			|10			|3			|8			|8
+
+	Robotic Dogs:
+
+	Name 	|Health 	|Happiness 	|Maintenance
+
+	Molly	|10			|8			|7
+
+	Robotic Cats:
+
+	Kitty	|10			|4			|9
 
 
 The game ends when all of the available pets have been adopted.

@@ -50,28 +50,28 @@ These are the statuses of the inital pets in the shelter whene the game begins:
 
 	Name 	|Health 	|Happiness 	|Hunger 	|Thirst 	|Cleanliness
 
-	Buck	|10		|10		|6		|10			|9
+	Buck	|10		|10		|6		|10		|9
 
-	Frankie |10		|5		|8		|7			|6
+	Frankie |10		|5		|8		|7		|6
 
 
 	Organic Cats:
 
 	Name 	|Health 	|Happiness 	|Hunger 	|Thirst 	|ShelterLitterBox
 
-	Gracie	|10		|10		|3		|8			|8
+	Gracie	|10		|10		|3		|8		|8
 
 	Robotic Dogs:
 
 	Name 	|Health 	|Happiness 	|Maintenance
 
-	Molly	|10		|8			|7
+	Molly	|10		|8		|7
 
 	Robotic Cats:
 
 	Name 	|Health 	|Happiness 	|Maintenance
 
-	Kitty	|10		|4			|9
+	Kitty	|10		|4		|9
 
 
 The game ends when all of the available pets have been adopted.

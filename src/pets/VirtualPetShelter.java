@@ -14,38 +14,6 @@ public class VirtualPetShelter {
 		return petsAvailableForAdoption.values();
 	}
 
-	// Creating the OrganicDog HashMap
-//	Map<String, OrganicDog> organicDogsAvailableForAdoption = new HashMap<>();
-
-	// Creating the OrganicCat HashMap
-//	Map<String, OrganicCat> organicCatsAvailableForAdoption = new HashMap<>();
-
-	// Creating the RoboticDog HashMap
-//	Map<String, RoboticDog> roboticDogsAvailableForAdoption = new HashMap<>();
-
-	// Creating the RoboticCat HashMap
-//	Map<String, RoboticCat> roboticCatsAvailableForAdoption = new HashMap<>();
-
-	// Displaying the organic dogs available for adoption
-//	public Collection<OrganicDog> availableOrganicDogs() {
-	//	return organicDogsAvailableForAdoption.values();
-//	}
-
-	// Displaying the organic cats available for adoption
-//	public Collection<OrganicCat> availableOrangicCats() {
-	//	return organicCatsAvailableForAdoption.values();
-//	}
-
-	// Displaying the robotic dogs available for adoption
-//	public Collection<RoboticDog> availableRoboticDogs() {
-	//	return roboticDogsAvailableForAdoption.values();
-//	}
-
-	// Displaying the robotic cats available for adoption
-//	public Collection<RoboticCat> availableRoboticCats() {
-	//	return roboticCatsAvailableForAdoption.values();
-//	}
-
 	// Get method to return a pet based on a name search
 	 public VirtualPet getPet(String petName) {
 	 return petsAvailableForAdoption.get(petName);

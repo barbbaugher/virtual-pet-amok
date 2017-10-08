@@ -40,8 +40,8 @@ public abstract class VirtualPet {
 	}
 
 	// Activities
-	void letsPlay(int fun) {
-		happinessLevel += fun;
+	void letsPlay() {
+		happinessLevel += 9;
 	}
 
 	// Tick method

@@ -12,8 +12,8 @@ public class OrganicDog extends Dog implements Organic {
 		this.thirstLevel = thirstLevel;
 		this.cleanlinessLevel = cleanlinessLevel;
 	}
-	
-	// Get methods
+
+		// Get methods
 		public int getHungerLevel() {
 			return hungerLevel;
 		}

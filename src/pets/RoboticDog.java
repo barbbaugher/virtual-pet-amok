@@ -29,5 +29,4 @@ public class RoboticDog extends Dog implements Robotic {
 			setHealthLevel(getHealthLevel() - 1);
 		}
 	}
-	
 }

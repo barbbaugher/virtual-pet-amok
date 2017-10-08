@@ -15,7 +15,7 @@ public class VirtualPetShelterApp {
 				5, 8, 7, 6);
 		petShelter.addPet(frankie);
 		RoboticDog molly = new RoboticDog("Molly", "A robotic dog who would love to rip the face off the mailman", 10,
-				10, 7);
+				8, 7);
 		petShelter.addPet(molly);
 		VirtualPet gracie = new OrganicCat("Gracie", "A sweet tabby cat that could stand to lose a few pounds", 10, 10,
 				3, 8);
@@ -128,7 +128,7 @@ public class VirtualPetShelterApp {
 				petShelter.shelterTickMethod();
 				System.out.println("These paws were made for walking...");
 				break;
-				
+
 			case "8":
 				petShelter.addPet(promptUserForNewOrganicDog(input));
 				petShelter.shelterTickMethod();
@@ -149,15 +149,15 @@ public class VirtualPetShelterApp {
 				petShelter.shelterTickMethod();
 				break;
 
-			// case "5":
-			// System.out.println("Enter the pet's name you would like to adopt: ");
-			// petName = input.next();
-			// petShelter.petsAvailableForAdoption.remove(petName);
-			// petShelter.shelterTickMethod();
-			// break;
+			case "12":
+				System.out.println("Enter the pet's name you would like to adopt: ");
+				petName = input.next();
+				petShelter.petsAvailableForAdoption.remove(petName);
+				petShelter.shelterTickMethod();
+				break;
 
 			// Exit menu
-			case "15":
+			case "16":
 				System.out.println("Thanks for playing.");
 				System.exit(0);
 				break;

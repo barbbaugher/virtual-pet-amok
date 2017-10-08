@@ -20,7 +20,7 @@ public class RoboticCat extends VirtualPet implements Robotic {
 		maintenanceLevel += 8;
 
 	}
-	
+
 	// Tick method
 	public void tickMethod() {
 		maintenanceLevel--;
@@ -29,5 +29,4 @@ public class RoboticCat extends VirtualPet implements Robotic {
 			setHealthLevel(getHealthLevel() - 1);
 		}
 	}
-
 }

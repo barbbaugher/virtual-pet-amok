@@ -81,7 +81,7 @@ public class VirtualPetShelter {
 		}
 
 	}
-	
+
 	// Walk the dogs in the shelter
 	public void walkTheDogsInTheShelter() {
 		for (VirtualPet availablePets : availablePets()) {
@@ -92,8 +92,6 @@ public class VirtualPetShelter {
 		}
 
 	}
-
-	
 
 	// Clean the shelter litter box
 	public void cleanTheLitterBox() {

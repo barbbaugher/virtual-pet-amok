@@ -40,5 +40,4 @@ public class OrganicCat extends VirtualPet implements Organic {
 			setHealthLevel(getHealthLevel() - 1);
 		}
 	}
-
 }

@@ -41,7 +41,7 @@ public class OrganicDog extends Dog implements Organic {
 	public void letsCleanTheDogCages() {
 		cleanlinessLevel += 9;
 	}
-	
+
 	// Tick method
 	public void tickMethod() {
 		hungerLevel--;
@@ -52,7 +52,7 @@ public class OrganicDog extends Dog implements Organic {
 			setHealthLevel(getHealthLevel() - 1);
 		}
 	}
-	
+
 	public void letsWalkTheDogs() {
 		super.letsWalkTheDogs();
 		cleanlinessLevel += 3;

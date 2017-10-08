@@ -12,12 +12,14 @@ public class VirtualPetShelterApp {
 		// Adding the initial virtual pets available for adoption
 		OrganicDog frankie = new OrganicDog("Frankie", "An Italian Greyhound who likes long walks along the Scioto",10,10, 0, 0, 0);
 		petShelter.addPet(frankie);
-		RoboticDog molly = new RoboticDog("Molly", "A Jug who would love to rip the face off the mailman",10,10, 0);
+		RoboticDog molly = new RoboticDog("Molly", "A robotic dog who would love to rip the face off the mailman",10,10, 0);
 		petShelter.addPet(molly);
-		VirtualPet gracie = new OrganicCat("Gracie", "A sweet Puggle that could stand to lose a few pounds",10,10, 0, 0);
+		VirtualPet gracie = new OrganicCat("Gracie", "A sweet tabby cat that could stand to lose a few pounds",10,10, 0, 0);
 		petShelter.addPet(gracie);
 		VirtualPet buck = new OrganicDog("Buck", "A fun loving Mutt that just wants to run and play",10,10, 0, 0, 0);
 		petShelter.addPet(buck);
+		RoboticCat kitty = new RoboticCat("Kitty", "A robotic cat who doesn't like you",10,10, 0);
+		petShelter.addPet(kitty);
 
 		// The welcome message
 		System.out.println(displayWelcomeMessage());
@@ -25,12 +27,11 @@ public class VirtualPetShelterApp {
 		do {
 
 			// Display pet statuses
-//			System.out.println("Here is the current status of the pets available for adoption:\n");
-//			System.out.println("Name \t|Hunger |Thirst |Boredom");
-//			for (VirtualPet availablePets : petShelter.availablePets()) {
-//				System.out.println(availablePets.getName() + "\t|" + availablePets.getHungerLevel() + "\t|"
-//						+ availablePets.getThirstLevel() + "\t|" + availablePets.getBoredomLevel());
-//			}
+			System.out.println("Here is the current status of the pets available for adoption:\n");
+//			System.out.println("Name \t|Hunger |Thirst |Happiness");
+			for (VirtualPet availablePets : petShelter.availablePets()) {
+				System.out.println(availablePets.getName() + "\t|" + availablePets.getHealthLevel() + "\t|" + availablePets.getHappinessLevel());
+			}
 
 			// The menu display
 			System.out.println(displayMenu());
@@ -39,12 +40,11 @@ public class VirtualPetShelterApp {
 
 			switch (menuEntry) {
 
-//			case "1":
-	//			int food = 6;
-		//		petShelter.feedTheShelter(food);
-			//	petShelter.shelterTickMethod();
-			//	System.out.println("Nom, nom, nom...\n");
-			//	break;
+			case "1":
+				petShelter.feedTheShelter();
+				petShelter.shelterTickMethod();
+				System.out.println("Nom, nom, nom...\n");
+				break;
 
 //			case "2":
 	//			int water = 5;
@@ -53,29 +53,29 @@ public class VirtualPetShelterApp {
 		//		System.out.println("Ahhhhhhhhhhhhhh...\n");
 			//	break;
 
-			case "3":
-				int fun = 10;
-				System.out.println("Enter the pet's name you would like to play with:\n");
-				for (VirtualPet availablePets : petShelter.availablePets()) {
-					System.out.println(availablePets.getName() + "\t|" + availablePets.getDescription());
-				}
-				String petName = input.next();
-				petShelter.getPet(petName).letsPlay(fun);
-				petShelter.shelterTickMethod();
-				System.out.println(petName + " loved play time\n");
-				break;
+//			case "3":
+	//			int fun = 10;
+		//		System.out.println("Enter the pet's name you would like to play with:\n");
+		//		for (VirtualPet availablePets : petShelter.availablePets()) {
+			//		System.out.println(availablePets.getName() + "\t|" + availablePets.getDescription());
+			//	}
+			//	String petName = input.next();
+			//	petShelter.getPet(petName).letsPlay(fun);
+			//	petShelter.shelterTickMethod();
+			//	System.out.println(petName + " loved play time\n");
+			//	break;
 
 	//		case "4":
 		//		petShelter.addPet(promptUserForNewPet(input));
 			//	petShelter.shelterTickMethod();
 		//		break;
 
-			case "5":
-				System.out.println("Enter the pet's name you would like to adopt: ");
-				petName = input.next();
-				petShelter.petsAvailableForAdoption.remove(petName);
-				petShelter.shelterTickMethod();
-				break;
+//			case "5":
+//				System.out.println("Enter the pet's name you would like to adopt: ");
+	//			petName = input.next();
+	//			petShelter.petsAvailableForAdoption.remove(petName);
+		//		petShelter.shelterTickMethod();
+		//		break;
 
 			// Exit menu
 			case "6":
@@ -97,12 +97,12 @@ public class VirtualPetShelterApp {
 
 	// Welcome message
 	private static String displayWelcomeMessage() {
-		return "Welcome to the Home for Homeless Virtual Pets\n*Unless you are a virtual cat... no virtual cats allowed.\n";
+		return "Welcome to the Home for Homeless Virtual Pets\n*Now accepting cats because we have to.\n";
 	}
 
 	// Menu display
 	private static String displayMenu() {
-		return "\nPlease select an option below by entering the corresponding number:\n\n1.  Let's Eat - feed all the pets\n2.  Let's Drink - water all the pets\n3.  Let's Play - select a pet to play with\n4.  Admit a pet to the shelter\n5.  Adopt a pet from the shelter\n6.  Exit the program";
+		return "\nPlease select an option below by entering the corresponding number:\n\n1.  Let's Eat - feed all the organic pets\n2.  Let's Drink - water all the pets\n3.  Let's Play - select a pet to play with\n4.  Admit a pet to the shelter\n5.  Adopt a pet from the shelter\n6.  Exit the program";
 	}
 
 	// Admit a pet

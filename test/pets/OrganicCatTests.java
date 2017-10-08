@@ -12,7 +12,7 @@ public class OrganicCatTests {
 		OrganicCat underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void anOrganicCatShouldBeAVirtualPet() {
 		VirtualPet underTest = new OrganicCat(null, null, 0, 0, 0, 0);
@@ -25,20 +25,20 @@ public class OrganicCatTests {
 		String result = underTest.getPetType();
 		assertEquals("OrganicCat", result);
 	}
-	
+
 	@Test
 	public void anOrganicCatShouldBeOrganic() {
 		Organic underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void shouldBeAbleToFeedAnOrganicCat() {
 		Organic underTest = new OrganicCat(null, null, 0, 0, 0, 0);
 		underTest.letsEat();
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void shouldBeAbleToWaterAnOrganicCat() {
 		Organic underTest = new OrganicCat(null, null, 0, 0, 0, 0);
@@ -46,5 +46,4 @@ public class OrganicCatTests {
 		assertNotNull(underTest);
 	}
 
-	
 }

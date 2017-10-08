@@ -12,7 +12,7 @@ public class RoboticDogTests {
 		RoboticDog underTest = new RoboticDog(null, null, 0, 0, 0);
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void aRoboticDogShouldBeADog() {
 		Dog underTest = new RoboticDog(null, null, 0, 0, 0);
@@ -38,5 +38,5 @@ public class RoboticDogTests {
 		underTest.letsOilTheRobots();
 		assertNotNull(underTest);
 	}
-	
+
 }

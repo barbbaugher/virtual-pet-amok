@@ -12,14 +12,13 @@ public class RoboticCatTests {
 		RoboticCat underTest = new RoboticCat(null, null, 0, 0, 0);
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void aRoboticCatShouldBeACat() {
 		VirtualPet underTest = new RoboticCat(null, null, 0, 0, 0);
 		assertNotNull(underTest);
 	}
 
-	
 	@Test
 	public void aCatShouldKnowItsTypeIsRoboticCat() {
 		VirtualPet underTest = new RoboticCat(null, null, 0, 0, 0);
@@ -32,7 +31,7 @@ public class RoboticCatTests {
 		Robotic underTest = new RoboticCat(null, null, 0, 0, 0);
 		assertNotNull(underTest);
 	}
-	
+
 	@Test
 	public void shouldBeAbleToOilARoboticCat() {
 		Robotic underTest = new RoboticCat(null, null, 0, 0, 0);

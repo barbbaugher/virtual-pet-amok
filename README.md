@@ -126,7 +126,7 @@ Activities (methods)
 
 
 9.  Admit an organic cat to the shelter
-	
+
 	Enter a new organic cat by providing their name and description
 
 

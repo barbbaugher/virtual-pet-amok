@@ -122,27 +122,27 @@ Activities (methods)
 
 8.  Admit an organic dog to the shelter
 
-	Enter a new organic dog by providing their name and description
+		Enter a new organic dog by providing their name and description
 
 
 9.  Admit an organic cat to the shelter
 
-	Enter a new organic cat by providing their name and description
+		Enter a new organic cat by providing their name and description
 
 
 10.  Admit a robotic dog to the shelter
 	
-	Enter a new robotic dog by providing their name and description
+		Enter a new robotic dog by providing their name and description
 
 
 11.  Admit a robotic cat to the shelter
 
-	Enter a new robotic cat by providing their name and description
+		Enter a new robotic cat by providing their name and description
 
 
 12.  Adopt a pet from the shelter
 
-	Adopt a pet from the shelter by removing them from the collection
+		Adopt a pet from the shelter by removing them from the collection
 
 
 13.  Exit the program.

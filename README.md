@@ -50,9 +50,9 @@ These are the statuses of the inital pets in the shelter whene the game begins:
 
 	Name 	|Health 	|Happiness 	|Hunger 	|Thirst 	|Cleanliness
 
-	Buck	|10			|10			|6			|10			|9
+	Buck	|10		|10			|6			|10			|9
 
-	Frankie |10			|5			|8			|7			|6
+	Frankie |10		|5			|8			|7			|6
 
 
 	Organic Cats:

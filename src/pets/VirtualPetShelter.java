@@ -6,6 +6,8 @@ import java.util.Map;
 
 public class VirtualPetShelter {
 
+	private int shelterLitterBoxCleanliness = 8;
+
 	// Creating the HashMap
 	Map<String, VirtualPet> petsAvailableForAdoption = new HashMap<>();
 
@@ -15,27 +17,27 @@ public class VirtualPetShelter {
 	}
 
 	// Get method to return a pet based on a name search
-	 public VirtualPet getPet(String petName) {
-	 return petsAvailableForAdoption.get(petName);
-	 }
+	public VirtualPet getPet(String petName) {
+		return petsAvailableForAdoption.get(petName);
+	}
 
 	// Are there still pets available for adoption?
-	 public boolean arePetsAvailable() {
-	 return petsAvailableForAdoption.isEmpty();
-	 }
+	public boolean arePetsAvailable() {
+		return petsAvailableForAdoption.isEmpty();
+	}
 
 	// Adding a new pet to the shelter
-	 public void addPet(VirtualPet virtualPet) {
-	 String adoptablePetSearch = virtualPet.getName();
-	 petsAvailableForAdoption.put(adoptablePetSearch, virtualPet);
-	 }
+	public void addPet(VirtualPet virtualPet) {
+		String adoptablePetSearch = virtualPet.getName();
+		petsAvailableForAdoption.put(adoptablePetSearch, virtualPet);
+	}
 
 	// Tick method
-	 public void shelterTickMethod() {
-	 for (VirtualPet availablePets : availablePets()) {
-	 availablePets.tickMethod();
-	 }
-	 }
+	public void shelterTickMethod() {
+		for (VirtualPet availablePets : availablePets()) {
+			availablePets.tickMethod();
+		}
+	}
 
 	// Feed all of the organic pets in the shelter
 	public void feedTheShelter() {
@@ -68,4 +70,24 @@ public class VirtualPetShelter {
 		}
 	}
 
+	// Clean the organic dog cages in the shelter
+	public void cleanTheDogCagesInTheShelter() {
+		for (VirtualPet availablePets : availablePets()) {
+			if (availablePets instanceof OrganicDog) {
+				OrganicDog organicDog = (OrganicDog) availablePets;
+				organicDog.letsCleanTheDogCages();
+			}
+		}
+
+	}
+
+	// Clean the shelter litter box
+	public void cleanTheLitterBox() {
+		shelterLitterBoxCleanliness += 7;
+	}
+
+	// Get methods
+	public int getShelterLitterBoxCleanliness() {
+		return shelterLitterBoxCleanliness;
+	}
 }

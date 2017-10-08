@@ -44,13 +44,13 @@ public class VirtualPetShelterApp {
 			}
 
 			System.out.println("\nHere is the current status of the organic cats available for adoption:\n");
-			System.out.println("Name \t|Health |Happiness |Hunger |Thirst");
+			System.out.println("Name \t|Health |Happiness |Hunger |Thirst |Shelter Litter Box");
 			for (VirtualPet availablePets : petShelter.availablePets()) {
 				if (availablePets instanceof OrganicCat) {
 					System.out.println(availablePets.getName() + "\t|" + availablePets.getHealthLevel() + "\t|"
 							+ availablePets.getHappinessLevel() + "\t   |"
 							+ ((OrganicCat) availablePets).getHungerLevel() + "\t   |"
-							+ ((OrganicCat) availablePets).getThirstLevel());
+							+ ((OrganicCat) availablePets).getThirstLevel() + "\t   |" + petShelter.getShelterLitterBoxCleanliness());
 				}
 			}
 
@@ -103,32 +103,46 @@ public class VirtualPetShelterApp {
 				petShelter.shelterTickMethod();
 				System.out.println("\n" + petName + " loved play time\n");
 				break;
-				
+
 			case "4":
 				petShelter.maintainTheRobotsInTheShelter();
 				petShelter.shelterTickMethod();
 				System.out.println("If I am well oiled I shall soon be all right again\n");
-				break;	
+				break;
+				
+			case "5":
+				petShelter.cleanTheDogCagesInTheShelter();
+				petShelter.shelterTickMethod();
+				System.out.println("Squeaky clean\n");
+				break;
+				
+			case "6":
+				petShelter.cleanTheLitterBox();
+				petShelter.shelterTickMethod();
+				System.out.println("Fresh kitty litter\n");
+				break;
 
-			 case "5":
-			 petShelter.addPet(promptUserForNewOrganicDog(input));
-			 petShelter.shelterTickMethod();
-			 break;
-			 
-			 case "6":
-				 petShelter.addPet(promptUserForNewOrganicCat(input));
-				 petShelter.shelterTickMethod();
-				 break;
-				 
-			 case "7":
-				 petShelter.addPet(promptUserForNewRoboticDog(input));
-				 petShelter.shelterTickMethod();
-				 break;
-				 
-			 case "8":
-				 petShelter.addPet(promptUserForNewRoboticCat(input));
-				 petShelter.shelterTickMethod();
-				 break;
+			case "7":
+				petShelter.addPet(promptUserForNewOrganicDog(input));
+				petShelter.shelterTickMethod();
+				break;
+
+			case "8":
+				petShelter.addPet(promptUserForNewOrganicCat(input));
+				petShelter.shelterTickMethod();
+				break;
+
+			case "9":
+				petShelter.addPet(promptUserForNewRoboticDog(input));
+				petShelter.shelterTickMethod();
+				break;
+
+			case "10":
+				petShelter.addPet(promptUserForNewRoboticCat(input));
+				petShelter.shelterTickMethod();
+				break;
+
+
 
 			// case "5":
 			// System.out.println("Enter the pet's name you would like to adopt: ");
@@ -138,7 +152,7 @@ public class VirtualPetShelterApp {
 			// break;
 
 			// Exit menu
-			case "10":
+			case "15":
 				System.out.println("Thanks for playing.");
 				System.exit(0);
 				break;
@@ -166,39 +180,39 @@ public class VirtualPetShelterApp {
 	}
 
 	// Admit an organic dog
-	 private static VirtualPet promptUserForNewOrganicDog(Scanner input) {
-	 System.out.println("Enter the name of the pet you would like to add:");
-	 	 String petName = input.next();
-	 System.out.println("Enter the description of the pet:");
-	 String petDescription = input.next();
-	 return new OrganicDog(petName, petDescription, 10, 10, 10, 10, 10);
-	 }
+	private static VirtualPet promptUserForNewOrganicDog(Scanner input) {
+		System.out.println("Enter the name of the pet you would like to add:");
+		String petName = input.next();
+		System.out.println("Enter the description of the pet:");
+		String petDescription = input.next();
+		return new OrganicDog(petName, petDescription, 10, 10, 10, 10, 10);
+	}
 
 	// Admit an organic cat
-	 private static VirtualPet promptUserForNewOrganicCat(Scanner input) {
-	 System.out.println("Enter the name of the pet you would like to add:");
-	 	 String petName = input.next();
-	 System.out.println("Enter the description of the pet:");
-	 String petDescription = input.next();
-	 return new OrganicCat(petName, petDescription, 10, 10, 10, 10);
-	 }
-	 
+	private static VirtualPet promptUserForNewOrganicCat(Scanner input) {
+		System.out.println("Enter the name of the pet you would like to add:");
+		String petName = input.next();
+		System.out.println("Enter the description of the pet:");
+		String petDescription = input.next();
+		return new OrganicCat(petName, petDescription, 10, 10, 10, 10);
+	}
+
 	// Admit an organic cat
-	 private static VirtualPet promptUserForNewRoboticDog(Scanner input) {
-	 System.out.println("Enter the name of the pet you would like to add:");
-	 	 String petName = input.next();
-	 System.out.println("Enter the description of the pet:");
-	 String petDescription = input.next();
-	 return new RoboticDog(petName, petDescription, 10, 10, 10);
-	 }
-	 
+	private static VirtualPet promptUserForNewRoboticDog(Scanner input) {
+		System.out.println("Enter the name of the pet you would like to add:");
+		String petName = input.next();
+		System.out.println("Enter the description of the pet:");
+		String petDescription = input.next();
+		return new RoboticDog(petName, petDescription, 10, 10, 10);
+	}
+
 	// Admit an organic cat
-	 private static VirtualPet promptUserForNewRoboticCat(Scanner input) {
-	 System.out.println("Enter the name of the pet you would like to add:");
-	 	 String petName = input.next();
-	 System.out.println("Enter the description of the pet:");
-	 String petDescription = input.next();
-	 return new RoboticCat(petName, petDescription, 10, 10, 10);
-	 }
+	private static VirtualPet promptUserForNewRoboticCat(Scanner input) {
+		System.out.println("Enter the name of the pet you would like to add:");
+		String petName = input.next();
+		System.out.println("Enter the description of the pet:");
+		String petDescription = input.next();
+		return new RoboticCat(petName, petDescription, 10, 10, 10);
+	}
 
 }

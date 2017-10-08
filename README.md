@@ -61,11 +61,13 @@ These are the statuses of the inital pets in the shelter whene the game begins:
 
 	Gracie	|10		|10		|3		|8		|8
 
+
 	Robotic Dogs:
 
 	Name 	|Health 	|Happiness 	|Maintenance
 
 	Molly	|10		|8		|7
+
 
 	Robotic Cats:
 
@@ -91,11 +93,7 @@ Activities (methods)
 
 2.  Let's Drink - water all the organic pets
 
-		thirstLevel + 5
-
-		hungerLevel - 1
-
-		boredomLevel -1
+		thirstLevel + 8
 
 
 3.  Let's Play - select a pet to play with

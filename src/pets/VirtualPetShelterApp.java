@@ -11,10 +11,10 @@ public class VirtualPetShelterApp {
 		VirtualPetShelter petShelter = new VirtualPetShelter();
 
 		// Adding the initial virtual pets available for adoption
-		OrganicDog frankie = new OrganicDog("Frankie", "An Italian Greyhound who likes long walks along the Scioto", 10,
+		VirtualPet frankie = new OrganicDog("Frankie", "An Italian Greyhound who likes long walks along the Scioto", 10,
 				5, 8, 7, 6);
 		petShelter.addPet(frankie);
-		RoboticDog molly = new RoboticDog("Molly", "A robotic dog who would love to rip the face off the mailman", 10,
+		VirtualPet molly = new RoboticDog("Molly", "A robotic dog who would love to rip the face off the mailman", 10,
 				8, 7);
 		petShelter.addPet(molly);
 		VirtualPet gracie = new OrganicCat("Gracie", "A sweet tabby cat that could stand to lose a few pounds", 10, 10,
@@ -22,7 +22,7 @@ public class VirtualPetShelterApp {
 		petShelter.addPet(gracie);
 		VirtualPet buck = new OrganicDog("Buck", "A fun loving Mutt that just wants to run and play", 10, 10, 6, 10, 9);
 		petShelter.addPet(buck);
-		RoboticCat kitty = new RoboticCat("Kitty", "A robotic cat who doesn't like you", 10, 4, 9);
+		VirtualPet kitty = new RoboticCat("Kitty", "A robotic cat who doesn't like you", 10, 4, 9);
 		petShelter.addPet(kitty);
 
 		// The welcome message

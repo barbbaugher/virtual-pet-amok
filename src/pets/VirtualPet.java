@@ -47,8 +47,7 @@ public abstract class VirtualPet {
 	}
 
 	// Tick method
-	public void tick() {
-	}
+	public abstract void tick();
 
 	// Class name
 	public String getPetType() {

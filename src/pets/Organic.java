@@ -2,7 +2,7 @@ package pets;
 
 public interface Organic {
 
-	public void letsEat();
+	public void feed();
 
-	public void letsDrink();
+	public void water();
 }

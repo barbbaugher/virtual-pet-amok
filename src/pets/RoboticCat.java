@@ -16,13 +16,13 @@ public class RoboticCat extends VirtualPet implements Robotic {
 	}
 
 	@Override
-	public void letsOilTheRobots() {
+	public void maintainRobots() {
 		maintenanceLevel += 8;
 
 	}
 
 	// Tick method
-	public void tickMethod() {
+	public void tick() {
 		maintenanceLevel--;
 		setHappinessLevel(getHappinessLevel() - 2);
 		if (maintenanceLevel <= 0 || getHappinessLevel() <= 0) {

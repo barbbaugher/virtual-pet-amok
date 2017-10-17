@@ -22,17 +22,17 @@ public class OrganicCat extends VirtualPet implements Organic {
 	}
 
 	// Activities
-	public void letsEat() {
+	public void feed() {
 		hungerLevel += 9;
 		thirstLevel -= 2;
 	}
 
-	public void letsDrink() {
+	public void water() {
 		thirstLevel += 8;
 	}
 
 	// Tick method
-	public void tickMethod() {
+	public void tick() {
 		hungerLevel--;
 		thirstLevel--;
 		setHappinessLevel(getHappinessLevel() - 2);

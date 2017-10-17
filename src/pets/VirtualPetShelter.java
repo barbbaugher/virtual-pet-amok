@@ -33,61 +33,61 @@ public class VirtualPetShelter {
 	}
 
 	// Tick method
-	public void shelterTickMethod() {
-		for (VirtualPet availablePets : availablePets()) {
-			availablePets.tickMethod();
+	public void tick() {
+		for (VirtualPet availablePet : availablePets()) {
+			availablePet.tick();
 		}
 		shelterLitterBoxCleanliness--;
 	}
 
 	// Feed all of the organic pets in the shelter
-	public void feedTheShelter() {
-		for (VirtualPet availablePets : availablePets()) {
-			if (availablePets instanceof Organic) {
-				Organic organicPet = (Organic) availablePets;
-				organicPet.letsEat();
+	public void feed() {
+		for (VirtualPet availablePet : availablePets()) {
+			if (availablePet instanceof Organic) {
+				Organic organicPet = (Organic) availablePet;
+				organicPet.feed();
 			}
 		}
 
 	}
 
 	// Water all of the organic pets in the shelter
-	public void waterTheShelter() {
-		for (VirtualPet availablePets : availablePets()) {
-			if (availablePets instanceof Organic) {
-				Organic organicPet = (Organic) availablePets;
-				organicPet.letsDrink();
+	public void water() {
+		for (VirtualPet availablePet : availablePets()) {
+			if (availablePet instanceof Organic) {
+				Organic organicPet = (Organic) availablePet;
+				organicPet.water();
 			}
 		}
 	}
 
 	// Maintain all of the robotic pets in the shelter
-	public void maintainTheRobotsInTheShelter() {
-		for (VirtualPet availablePets : availablePets()) {
-			if (availablePets instanceof Robotic) {
-				Robotic roboticPet = (Robotic) availablePets;
-				roboticPet.letsOilTheRobots();
+	public void maintainRobots() {
+		for (VirtualPet availablePet : availablePets()) {
+			if (availablePet instanceof Robotic) {
+				Robotic roboticPet = (Robotic) availablePet;
+				roboticPet.maintainRobots();
 			}
 		}
 	}
 
 	// Clean the organic dog cages in the shelter
-	public void cleanTheDogCagesInTheShelter() {
-		for (VirtualPet availablePets : availablePets()) {
-			if (availablePets instanceof OrganicDog) {
-				OrganicDog organicDog = (OrganicDog) availablePets;
-				organicDog.letsCleanTheDogCages();
+	public void cleanCages() {
+		for (VirtualPet availablePet : availablePets()) {
+			if (availablePet instanceof OrganicDog) {
+				OrganicDog organicDog = (OrganicDog) availablePet;
+				organicDog.clean();
 			}
 		}
 
 	}
 
 	// Walk the dogs in the shelter
-	public void walkTheDogsInTheShelter() {
-		for (VirtualPet availablePets : availablePets()) {
-			if (availablePets instanceof Dog) {
-				Dog dog = (Dog) availablePets;
-				dog.letsWalkTheDogs();
+	public void walkTheDogs() {
+		for (VirtualPet availablePet : availablePets()) {
+			if (availablePet instanceof Dog) {
+				Dog dog = (Dog) availablePet;
+				dog.walkTheDogs();
 			}
 		}
 

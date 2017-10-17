@@ -83,77 +83,77 @@ public class VirtualPetShelterApp {
 			switch (menuEntry) {
 
 			case "1":
-				petShelter.feedTheShelter();
-				petShelter.shelterTickMethod();
+				petShelter.feed();
+				petShelter.tick();
 				System.out.println("Nom, nom, nom...\n");
 				break;
 
 			case "2":
-				petShelter.waterTheShelter();
-				petShelter.shelterTickMethod();
+				petShelter.water();
+				petShelter.tick();
 				System.out.println("Ahhhhhhhhhhhhhh...\n");
 				break;
 
 			case "3":
 				System.out.println("Enter the pet's name you would like to play with:\n");
-				for (VirtualPet availablePets : petShelter.availablePets()) {
-					System.out.println(availablePets.getName() + "\t|" + availablePets.getDescription());
+				for (VirtualPet availablePet : petShelter.availablePets()) {
+					System.out.println(availablePet.getName() + "\t|" + availablePet.getDescription());
 				}
 				String petName = input.next();
-				petShelter.getPet(petName).letsPlay();
-				petShelter.shelterTickMethod();
+				petShelter.getPet(petName).play();
+				petShelter.tick();
 				System.out.println("\n" + petName + " loved play time\n");
 				break;
 
 			case "4":
-				petShelter.maintainTheRobotsInTheShelter();
-				petShelter.shelterTickMethod();
+				petShelter.maintainRobots();
+				petShelter.tick();
 				System.out.println("If I am well oiled I shall soon be all right again\n");
 				break;
 
 			case "5":
-				petShelter.cleanTheDogCagesInTheShelter();
-				petShelter.shelterTickMethod();
+				petShelter.cleanCages();
+				petShelter.tick();
 				System.out.println("Squeaky clean\n");
 				break;
 
 			case "6":
 				petShelter.cleanTheLitterBox();
-				petShelter.shelterTickMethod();
+				petShelter.tick();
 				System.out.println("Fresh kitty litter\n");
 				break;
 
 			case "7":
-				petShelter.walkTheDogsInTheShelter();
-				petShelter.shelterTickMethod();
+				petShelter.walkTheDogs();
+				petShelter.tick();
 				System.out.println("These paws were made for walking...\n");
 				break;
 
 			case "8":
 				petShelter.addPet(promptUserForNewOrganicDog(input));
-				petShelter.shelterTickMethod();
+				petShelter.tick();
 				break;
 
 			case "9":
 				petShelter.addPet(promptUserForNewOrganicCat(input));
-				petShelter.shelterTickMethod();
+				petShelter.tick();
 				break;
 
 			case "10":
 				petShelter.addPet(promptUserForNewRoboticDog(input));
-				petShelter.shelterTickMethod();
+				petShelter.tick();
 				break;
 
 			case "11":
 				petShelter.addPet(promptUserForNewRoboticCat(input));
-				petShelter.shelterTickMethod();
+				petShelter.tick();
 				break;
 
 			case "12":
 				System.out.println("Enter the pet's name you would like to adopt: ");
 				petName = input.next();
 				petShelter.petsAvailableForAdoption.remove(petName);
-				petShelter.shelterTickMethod();
+				petShelter.tick();
 				break;
 
 			// Exit menu

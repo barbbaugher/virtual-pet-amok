@@ -42,12 +42,12 @@ public abstract class VirtualPet {
 	}
 
 	// Activities
-	void letsPlay() {
+	void play() {
 		setHappinessLevel(getHappinessLevel() + 10);
 	}
 
 	// Tick method
-	public void tickMethod() {
+	public void tick() {
 	}
 
 	// Class name

@@ -35,7 +35,7 @@ public class RoboticDogTests {
 	@Test
 	public void shouldBeAbleToOilARoboticDog() {
 		Robotic underTest = new RoboticDog(null, null, 0, 0, 0);
-		underTest.letsOilTheRobots();
+		underTest.maintainRobots();
 		assertNotNull(underTest);
 	}
 

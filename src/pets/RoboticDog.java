@@ -16,13 +16,13 @@ public class RoboticDog extends Dog implements Robotic {
 	}
 
 	@Override
-	public void letsOilTheRobots() {
+	public void maintainRobots() {
 		maintenanceLevel += 10;
 
 	}
 
 	// Tick method
-	public void tickMethod() {
+	public void tick() {
 		maintenanceLevel--;
 		setHappinessLevel(getHappinessLevel() - 1);
 		if (maintenanceLevel <= 0 || getHappinessLevel() <= 0) {

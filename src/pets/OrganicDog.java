@@ -28,21 +28,21 @@ public class OrganicDog extends Dog implements Organic {
 	}
 
 	// Activities
-	public void letsEat() {
+	public void feed() {
 		hungerLevel += 10;
 		thirstLevel -= 1;
 	}
 
-	public void letsDrink() {
+	public void water() {
 		thirstLevel += 8;
 	}
 
-	public void letsCleanTheDogCages() {
+	public void clean() {
 		cleanlinessLevel += 9;
 	}
 
 	// Tick method
-	public void tickMethod() {
+	public void tick() {
 		hungerLevel--;
 		thirstLevel--;
 		cleanlinessLevel--;
@@ -52,8 +52,8 @@ public class OrganicDog extends Dog implements Organic {
 		}
 	}
 
-	public void letsWalkTheDogs() {
-		super.letsWalkTheDogs();
+	public void walkTheDogs() {
+		super.walkTheDogs();
 		cleanlinessLevel += 3;
 	}
 }

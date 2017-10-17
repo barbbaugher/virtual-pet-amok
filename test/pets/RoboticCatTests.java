@@ -35,7 +35,7 @@ public class RoboticCatTests {
 	@Test
 	public void shouldBeAbleToOilARoboticCat() {
 		Robotic underTest = new RoboticCat(null, null, 0, 0, 0);
-		underTest.letsOilTheRobots();
+		underTest.maintainRobots();
 		assertNotNull(underTest);
 	}
 }

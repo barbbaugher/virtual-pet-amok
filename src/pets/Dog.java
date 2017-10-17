@@ -6,7 +6,7 @@ public abstract class Dog extends VirtualPet {
 		super(petName, petDescription, healthLevel, happinessLevel);
 	}
 
-	public void letsWalkTheDogs() {
+	public void walkTheDogs() {
 		setHappinessLevel(getHappinessLevel() + 7);
 	}
 

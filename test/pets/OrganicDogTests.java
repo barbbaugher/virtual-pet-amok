@@ -35,21 +35,21 @@ public class OrganicDogTests {
 	@Test
 	public void shouldBeAbleToFeedAnOrganicDog() {
 		Organic underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
-		underTest.letsEat();
+		underTest.feed();
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void shouldBeAbleToWaterAnOrganicDog() {
 		Organic underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
-		underTest.letsDrink();
+		underTest.water();
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void shouldBeAbleToCleanAnOrganicDogsCage() {
 		OrganicDog underTest = new OrganicDog(null, null, 0, 0, 0, 0, 0);
-		underTest.letsCleanTheDogCages();
+		underTest.clean();
 		assertNotNull(underTest);
 	}
 }

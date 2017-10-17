@@ -35,14 +35,14 @@ public class OrganicCatTests {
 	@Test
 	public void shouldBeAbleToFeedAnOrganicCat() {
 		Organic underTest = new OrganicCat(null, null, 0, 0, 0, 0);
-		underTest.letsEat();
+		underTest.feed();
 		assertNotNull(underTest);
 	}
 
 	@Test
 	public void shouldBeAbleToWaterAnOrganicCat() {
 		Organic underTest = new OrganicCat(null, null, 0, 0, 0, 0);
-		underTest.letsDrink();
+		underTest.water();
 		assertNotNull(underTest);
 	}
 
